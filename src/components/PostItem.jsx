@@ -7,11 +7,14 @@ const LI = styled.li`
 	margin-bottom: 50px;
 	background-color: red;
 	list-style-type: none;
+	border-radius: 20px;
+	transition: 1s;
 	&:hover {
 		background: rgba(0, 0, 0, 0);
-		color: #3a7999;
-		box-shadow: inset 0 0 0 3px #3a7999;
+		color: royalblue;
+		box-shadow: inset 0 15px 15px 3px black;
 	}
+
 	& div {
 		display: flex;
 		justify-content: space-around;
@@ -20,7 +23,8 @@ const LI = styled.li`
 	& div > div {
 		width: 40px;
 		height: 30px;
-		background-color: gray;
+		background-color: black;
+		border-radius: 10px;
 		align-items: center;
 		align-self: center;
 	}
