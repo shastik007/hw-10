@@ -11,6 +11,7 @@ function App() {
 			const data = await fetch(
 				'https://jsonplaceholder.typicode.com/photos?_limit=10',
 			)
+			console.log(data)
 			const json = await data.json()
 			return setData([...json])
 		}
