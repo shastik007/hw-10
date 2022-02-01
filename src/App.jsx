@@ -5,7 +5,6 @@ import Post from './components/Post'
 
 function App() {
 	const [data, setData] = useState([])
-	const [button, setButton] = useState(false)
 	useEffect(() => {
 		const request = async () => {
 			const data = await fetch(
@@ -16,7 +15,7 @@ function App() {
 			return setData([...json])
 		}
 		request()
-	}, [button])
+	}, [])
 
 	return (
 		<div className='App'>
